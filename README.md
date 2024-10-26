@@ -68,8 +68,8 @@ This project utilizes a combination of 16-bit and 32-bit floating-point numbers 
 ### Instructions to Run the Code
 1. **Clone this repository**:
    ```bash
-   git clone <repository_url>
-   cd <repository_folder>
+   git clone https://github.com/Shriya-20/Gesture-Recogniton-in-Game-Development.git
+   cd Gesture-Recogniton-in-Game-Development
   You can use my pre-trained model included in this repository or train your own before running the application.
 ## Instructions to Run the Code
 2. **Run the application**:
