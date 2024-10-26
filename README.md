@@ -1,5 +1,5 @@
 # Gesture-Recogniton-in-Game-Development
-## - Gesture Recognition with 3DCNN and ConvLSTM
+## **Gesture Recognition with 3DCNN and LSTM**
 
 ## Objective
 The goal of this project is to recognize human hand gestures in real-time using a custom-built model trained on the [Jester Dataset](https://www.qualcomm.com/developer/software/jester-dataset). The system aims to detect gestures such as "No Gesture", "swiping left," "swiping right," "thumb up," "thumb down," "zooming in," and "zooming out" to simulate keypress events during gameplay or media interaction.
