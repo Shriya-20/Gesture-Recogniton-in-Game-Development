@@ -20,24 +20,18 @@ The goal of this project is to recognize human hand gestures in real-time using 
 3. **Data Generators**: Custom batch generation with frame standardization and one-hot encoding of labels.
 
 ## Model Architectures
-1. **3DCNN-4 Layers (SGD)**:  
-   - **Input Shape**: (36, 32, 32, 3)
-   - **Optimizer**: SGD
-   - **Accuracy**: 81.7%
-   - **Issues**: Struggled with "Zooming In/Out" and "Thumb Up."
+| Model                            | Optimizer       | Accuracy | Notes |
+|----------------------------------|-----------------|----------|-------|
+| 3DCNN-4 layers (elu, SGD)        | SGD (0.001)    | 81.7%    | Challenges with Zoom In/Out |
+| 3DCNN-2 ConvLSTM-2 (elu, Adam)   | Adam (0.0001)  | 85.2%    | Better class separation |
+| 3DCNN-3 layers + ConvLSTM-3      | RMSprop (0.0001)| 83.95%  | No significant gain |
+| 3DCNN-4 layers + ConvLSTM-1      | Adam (0.0001)  | 87.85%   | Least misclassification |
+| 3DCNN-4 layers + ConvLSTM-2      | Adadelta (1.0) | 90.55%   | Best accuracy and class separation |
 
-2. **3DCNN-2 ConvLSTM (Adam)**:  
-   - **Optimizer**: Adam
-   - **Accuracy**: 85.21%
-   - **Notable Improvement**: Enhanced performance and class separation.
+Some points about the architecture are mentioned here. Refer notebook more details about architecture.
 
-3. **3DCNN-3 ConvLSTM (RMSprop)**:  
-   - **Accuracy**: 83.95%
-   - **Performance**: Stable with a slight drop in overall results.
+The models were evaluated on validation data. 
 
-4. **3DCNN-4 Layers + ConvLSTM-1 Layer (Adam)**:  
-   - **Best Performance**: 87.85%
-   - **Stability**: Most stable and accurate for gesture recognition.
 
 ## Mixed Precision
 This project utilizes a combination of 16-bit and 32-bit floating-point numbers for improved performance, optimized for NVIDIA GPUs with Tensor Cores.
