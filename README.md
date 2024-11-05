@@ -2,7 +2,7 @@
 ## **Gesture Recognition with 3DCNN and LSTM**
 
 ## Objective
-The goal of this project is to recognize human hand gestures in real-time using a custom-built model trained on the [Jester Dataset](https://www.qualcomm.com/developer/software/jester-dataset). The system aims to detect gestures such as "No Gesture", "swiping left," "swiping right," "thumb up," "thumb down," "zooming in," and "zooming out" to simulate keypress events during gameplay or media interaction.
+This project aims to recognize human hand gestures in real-time using a custom-built model trained on the [Jester Dataset](https://www.qualcomm.com/developer/software/jester-dataset). The system aims to detect gestures such as "No Gesture", "swiping left," "swiping right," "thumb up," "thumb down," "zooming in," and "zooming out" to simulate keypress events during gameplay or media interaction.
 
 ## Dataset Overview
 - **Dataset**: Jester
@@ -28,7 +28,7 @@ The goal of this project is to recognize human hand gestures in real-time using 
 | 3DCNN-4 layers + ConvLSTM-1      | Adam (0.0001)  | 87.85%   | Least misclassification |
 | 3DCNN-4 layers + ConvLSTM-2      | Adadelta (1.0) | 90.55%   | Best accuracy and class separation |
 
-Some points about the architecture are mentioned here. Refer notebook more details about architecture.
+Some points about the architecture are mentioned here. Refer notebook for more details about architecture.
 
 The models were evaluated on validation data. 
 
@@ -43,7 +43,6 @@ This project utilizes a combination of 16-bit and 32-bit floating-point numbers 
 - **Thumb Up**: Lower precision, often misclassified.
 - **Zooming Gestures**: Struggles with differentiation.
 
-## Deployment
 - The application recognizes gestures in real-time and triggers keypress events (e.g., swiping left corresponds to the left arrow key).
 - Compatible with media players and games, enabling intuitive interaction through gestures.
 
@@ -63,8 +62,8 @@ This project utilizes a combination of 16-bit and 32-bit floating-point numbers 
 1. **Clone this repository**:
    ```bash
    git clone https://github.com/Shriya-20/Gesture-Recogniton-in-Game-Development.git
-   cd Gesture-Recogniton-in-Game-Development
-  You can use my pre-trained model included in this repository or train your own before running the application.
+   cd Gesture-Recognition-in-Game-Development
+  You can use my pre-trained model in this repository or train your own before running the application.
 ## Instructions to Run the Code
 2. **Run the application**:
    ```bash
