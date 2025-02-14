@@ -19,6 +19,9 @@ This project aims to recognize human hand gestures in real-time using a custom-b
 2. **Standardizing Frame Count**: Ensures consistent frames per gesture (36 frames).
 3. **Data Generators**: Custom batch generation with frame standardization and one-hot encoding of labels.
 
+ ![flowchart](images/11.png)
+
+
 ## Model Architectures
 | Model                            | Optimizer       | Accuracy | Notes |
 |----------------------------------|-----------------|----------|-------|
@@ -42,6 +45,8 @@ This project utilizes a combination of 16-bit and 32-bit floating-point numbers 
 - **Thumb Down**: Good results.
 - **Thumb Up**: Lower precision, often misclassified.
 - **Zooming Gestures**: Struggles with differentiation.
+![flowchart](images/21.png)   ![flowchart](images/41.png)
+
 
 - The application recognizes gestures in real-time and triggers keypress events (e.g., swiping left corresponds to the left arrow key).
 - Compatible with media players and games, enabling intuitive interaction through gestures.
@@ -68,7 +73,9 @@ This project utilizes a combination of 16-bit and 32-bit floating-point numbers 
 2. **Run the application**:
    ```bash
     python app.py
-   
+
+ ![demo using hill climb game](images/31.png)
+
 ## Usage:
 - The top 3 gesture predictions will be displayed in real-time in real time, gestures simulate keypress events enabling you to customize it based on required functionality.
 
