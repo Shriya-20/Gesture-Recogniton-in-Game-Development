@@ -31,7 +31,7 @@ This project aims to recognize human hand gestures in real-time using a custom-b
 | 3DCNN-4 layers + ConvLSTM-1      | Adam (0.0001)  | 87.85%   | Least misclassification |
 | 3DCNN-4 layers + ConvLSTM-2      | Adadelta (1.0) | 90.55%   | Best accuracy and class separation |
 
-Some points about the architecture are mentioned here. Refer notebook for more details about architecture.
+Some points about the architecture are mentioned here. Refer my notebook for more details about architecture.
 
 The models were evaluated on validation data. 
 
